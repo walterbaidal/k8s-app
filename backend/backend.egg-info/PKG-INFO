@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: backend
+Version: 0.1b0
+Summary: Backend API
+Home-page: UNKNOWN
+Author: Walter Baidal
+Author-email: walterbaidal96@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Beta
+Classifier: Environment :: Real-Time Mask Detection
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Backend API
+Requires-Python: >=3.6
+
+UNKNOWN
+
