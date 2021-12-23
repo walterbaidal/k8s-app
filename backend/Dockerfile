@@ -20,6 +20,6 @@ WORKDIR /app/src
 
 ENTRYPOINT [ "python3" ]
 
-EXPOSE 5000
+EXPOSE 5000:5000
 
 CMD [ "app.py" ]

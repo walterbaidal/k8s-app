@@ -7,6 +7,8 @@ api = Api(app)
 
 
 @api.route('/time')
+@api.header("Access-Control-Allow-Origin", "*")
+@api.header("Content-Type", "application/json")
 class HelloWorld(Resource):
     def get(self):
         now = datetime.now()

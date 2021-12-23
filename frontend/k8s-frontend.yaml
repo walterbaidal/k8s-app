@@ -1,34 +1,35 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-k8s-app
+  name: frontend-k8s-app
   labels:
-    app: backend
+    app: frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: backend
+      app: frontend
   template:
     metadata:
       labels:
-        app: backend
+        app: frontend
     spec:
       containers:
-        - name: backend
-          image: k8s-backend
+        - name: frontend
+          image: k8s-frontend
           imagePullPolicy: IfNotPresent
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-k8s-app
+  name: frontend-k8s-app
   labels:
-    app: backend
+    app: frontend
 spec:
+  type: NodePort
   selector:
-    app: backend
+    app: frontend
   ports:
     - protocol: TCP
-      port: 5000
-      targetPort: 5000
+      port: 80
+      targetPort: 80
