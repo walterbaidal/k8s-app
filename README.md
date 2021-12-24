@@ -48,7 +48,7 @@ This project is intended to be built for learning porpuses following DevOps idea
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This are some of the languages and tools used to build this project
 
 * [Docker](https://www.docker.com/)
 * [Minikube](https://kubernetes.io/es/docs/tutorials/hello-minikube/)
