@@ -1,14 +1,15 @@
 from flask import Flask
 from flask_restx import Resource, Api
 from datetime import datetime
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 
 @api.route('/time')
 @api.header("Access-Control-Allow-Origin", "*")
-@api.header("Content-Type", "application/json")
 class HelloWorld(Resource):
     def get(self):
         now = datetime.now()
